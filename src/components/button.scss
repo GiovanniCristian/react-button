@@ -1,0 +1,29 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn {
+    width: 300px;
+    height: 150px;
+    border: 3px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+button {
+    @include btn;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+        &:hover {
+            background-color: rgba(255, 166, 0, 0.802);
+            color: white;
+            font-weight: bold;
+            transform: scale(1.3);
+        }
+}
